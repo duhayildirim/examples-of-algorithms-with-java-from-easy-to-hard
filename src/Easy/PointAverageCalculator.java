@@ -4,29 +4,44 @@ import java.util.Scanner;
 
 public class PointAverageCalculator {
     public static void main(String[] args) {
-        int math, physics, history, chemical, music;
+        int math, physics, chemical, turkish, music;
+
         Scanner input = new Scanner(System.in);
 
-        System.out.println("enter the math:");
+        System.out.print("Enter math:");
         math = input.nextInt();
-
-        System.out.println("enter the physics:");
+        if (math < 0 || math > 100) {
+            math = 0;
+        }
+        System.out.print("Enter physics:");
         physics = input.nextInt();
-
-        System.out.println("enter the history:");
-        history = input.nextInt();
-
-        System.out.println("enter the chemical:");
+        if (physics < 0 || physics > 100) {
+            physics = 0;
+        }
+        System.out.print("Enter chemical:");
         chemical = input.nextInt();
-
-        System.out.println("enter the music:");
+        if (chemical < 0 || chemical > 100) {
+            chemical = 0;
+        }
+        System.out.print("Enter turkish:");
+        turkish = input.nextInt();
+        if (turkish < 0 || turkish > 100) {
+            turkish = 0;
+        }
+        System.out.print("Enter music:");
         music = input.nextInt();
+        if (music < 0 || music > 100) {
+            music = 0;
+        }
 
-        int count = math + physics + history + chemical + music;
-        double average = count / 5;
-        boolean status = average >= 60 ? true : false;
-        String text = status == true ? "successful" : "negative";
+        double average = (math + physics + chemical + turkish + music) / 5;
 
-        System.out.print(text);
+
+        if (average <= 55) {
+            System.out.println("negative");
+        } else {
+            System.out.println("succesfull.");
+        }
+        System.out.println("average : " + average);
     }
 }
