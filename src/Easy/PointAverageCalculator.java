@@ -22,7 +22,7 @@ public class PointAverageCalculator {
         System.out.println("enter the music:");
         music = input.nextInt();
 
-        int count = math + physics + history + chemical + music + turkish;
+        int count = math + physics + history + chemical + music;
         double average = count / 5;
         boolean status = average >= 60 ? true : false;
         String text = status == true ? "successful" : "negative";
