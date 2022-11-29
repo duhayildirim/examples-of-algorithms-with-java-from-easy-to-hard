@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PointAverageCalculator {
     public static void main(String[] args) {
-        int math, physics, history, chemical, music, turkish;
+        int math, physics, history, chemical, music;
         Scanner input = new Scanner(System.in);
 
         System.out.println("enter the math:");
@@ -22,11 +22,8 @@ public class PointAverageCalculator {
         System.out.println("enter the music:");
         music = input.nextInt();
 
-        System.out.println("enter the turkish:");
-        turkish = input.nextInt();
-
         int count = math + physics + history + chemical + music + turkish;
-        double average = count / 6;
+        double average = count / 5;
         boolean status = average >= 60 ? true : false;
         String text = status == true ? "successful" : "negative";
 
