@@ -8,7 +8,7 @@ public class SumEvenAndMultipleOfFour {
         Scanner input = new Scanner(System.in);
 
         while (target % 2 == 0) {
-            System.out.println("Enter to number");
+            System.out.println("Enter the number");
             target = input.nextInt();
             if (target % 2 == 0 && target % 4 == 0) {
                 sum += target;

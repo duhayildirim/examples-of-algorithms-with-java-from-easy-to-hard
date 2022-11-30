@@ -8,7 +8,7 @@ public class TaxiPriceCalculator {
         double priceOfMile, total;
 
         Scanner input = new Scanner(System.in);
-        System.out.print("enter the total miles: ");
+        System.out.print("enter total miles: ");
         miles = input.nextInt();
 
         System.out.print("price of mile: ");

@@ -7,7 +7,7 @@ public class CircleAreaCircumference {
         double area, circumference, PI = 3.14;
         int r;
 
-        System.out.print("Enter to radius: ");
+        System.out.print("Enter the radius: ");
         Scanner input = new Scanner(System.in);
         r = input.nextInt();
 

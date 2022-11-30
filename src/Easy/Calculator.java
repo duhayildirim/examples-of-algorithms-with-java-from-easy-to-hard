@@ -8,11 +8,11 @@ public class Calculator {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("enter to first number:");
+        System.out.println("enter first number:");
         num1 = input.nextDouble();
         System.out.println("choose operator: \n + = 1\n - = 2 \n * = 3 \n / = 4");
         choise = input.nextInt();
-        System.out.println("enter to first number:");
+        System.out.println("enter the first number:");
         num2 = input.nextDouble();
 
         if(choise == 1 || choise == 2 || choise == 3 || choise == 4) {
