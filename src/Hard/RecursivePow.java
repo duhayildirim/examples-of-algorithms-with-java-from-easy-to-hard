@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class RecursivePow {
     static int pow(int n1, int n2) {
-        int result;
-        result = n2 == 0 ? 1 : n1 * pow(n1, n2 - 1);
-        return result;
+        return n2 == 0 ? 1 : n1 * pow(n1, n2 - 1);
     }
 
     public static void main(String[] args) {
