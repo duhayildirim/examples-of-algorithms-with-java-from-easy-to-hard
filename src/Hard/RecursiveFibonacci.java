@@ -1,4 +1,5 @@
 package Hard;
+
 import java.util.Scanner;
 
 public class RecursiveFibonacci {
@@ -10,10 +11,10 @@ public class RecursiveFibonacci {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
+        int number = input.nextInt();
 
         System.out.println(fib(number));
     }
